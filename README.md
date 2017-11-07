@@ -1,7 +1,7 @@
 # CYRuler
 标尺升级版
 
-<gif src="https://github.com/clarkIsMe/image/blob/master/CYRuler.gif" width = "375" height = "667" alt="图片名称" align=center />
+<iframe height=667 width=375 src="https://github.com/clarkIsMe/image/blob/master/CYRuler.gif">
 
 ##### create an ruler that horizontal and up
 <pre><code>
