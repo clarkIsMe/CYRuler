@@ -1,7 +1,7 @@
 # CYRuler
 标尺升级版
 
-<img src="https://github.com/clarkIsMe/image/blob/master/biaochi.png" width = "375" height = "667" alt="图片名称" align=center />
+<gif src="https://github.com/clarkIsMe/image/blob/master/CYRuler.gif" width = "375" height = "667" alt="图片名称" align=center />
 
 ##### create an ruler that horizontal and up
 <pre><code>
@@ -48,10 +48,8 @@ ruler.scaleLable = scaleLable;  //can be nil
 </code></pre>
 
 ### how to use
-<code>
-
+<pre><code>
 pod 'CYRuler'
 
 #import <CYRuler.h> 
-
-</code>
+</code></pre>
