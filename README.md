@@ -1,7 +1,7 @@
 # CYRuler
 标尺升级版
 
-![image](https://github.com/clarkIsMe/image/blob/master/CYRuler.gif)
+![image](https://github.com/clarkIsMe/image/blob/master/rulergif.gif)
 
 ##### create an ruler that horizontal and up
 <pre><code>
