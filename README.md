@@ -1,5 +1,5 @@
 # CYRuler
-标尺升级版
+标尺升级版 (scrollRulerView upgrade)
 
 ![image](https://github.com/clarkIsMe/image/blob/master/rulergif.gif)
 
