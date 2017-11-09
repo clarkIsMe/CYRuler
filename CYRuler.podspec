@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 s.name = 'CYRuler'
-s.version = '1.4'
+s.version = '1.5'
 s.license = 'MIT'
 s.summary = 'An custome scoller ruler.'
 s.homepage = 'https://github.com/clarkIsMe/CYRuler'

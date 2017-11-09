@@ -26,7 +26,6 @@ extern BOOL didImplementationEnd;
     frame = CGRectMake(frame.origin.x + (frame.size.width - frame.size.height) / 2.0, frame.origin.y - (frame.size.width - frame.size.height) / 2.0, frame.size.height, frame.size.width);
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor greenColor];
         self.showsVerticalScrollIndicator = NO;
         self.showsHorizontalScrollIndicator = NO;
         self.bounces = NO;
