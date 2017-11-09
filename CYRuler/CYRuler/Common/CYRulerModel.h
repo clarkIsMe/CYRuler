@@ -30,3 +30,4 @@
 - (instancetype)initWithPointerOffset:(double)pointerOffset startScale:(NSInteger)startScale endScale:(NSInteger)endScale valueOfUnitScale:(NSInteger)valueOfUnitScale defaultScale:(NSInteger)defaultScale according:(CGRect)frame;
 
 @end
+

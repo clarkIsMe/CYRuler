@@ -17,7 +17,7 @@
 		5F221B161FB1938E00192C15 /* CYRulerHDCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F221B151FB1938E00192C15 /* CYRulerHDCell.m */; };
 		5F221B191FB193AB00192C15 /* CYRulerHDHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F221B181FB193AB00192C15 /* CYRulerHDHeadCell.m */; };
 		5F221B1C1FB193C000192C15 /* CYRulerHDFootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F221B1B1FB193C000192C15 /* CYRulerHDFootCell.m */; };
-		5F221B251FB3FB6A00192C15 /* CYRulerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F221B231FB3FB6A00192C15 /* CYRulerModel.m */; };
+		5F2DF1451FB40515008DEC0C /* CYRulerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2DF1441FB40515008DEC0C /* CYRulerModel.m */; };
 		5F3065841FA7104A00F6C7B4 /* CYRulerDataSourceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F3065831FA7104A00F6C7B4 /* CYRulerDataSourceModel.m */; };
 		5FBAB6921FA42734002D506F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB6911FA42734002D506F /* AppDelegate.m */; };
 		5FBAB6951FA42734002D506F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBAB6941FA42734002D506F /* ViewController.m */; };
@@ -50,8 +50,8 @@
 		5F221B181FB193AB00192C15 /* CYRulerHDHeadCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRulerHDHeadCell.m; sourceTree = "<group>"; };
 		5F221B1A1FB193C000192C15 /* CYRulerHDFootCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRulerHDFootCell.h; sourceTree = "<group>"; };
 		5F221B1B1FB193C000192C15 /* CYRulerHDFootCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRulerHDFootCell.m; sourceTree = "<group>"; };
-		5F221B231FB3FB6A00192C15 /* CYRulerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYRulerModel.m; sourceTree = "<group>"; };
-		5F221B241FB3FB6A00192C15 /* CYRulerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYRulerModel.h; sourceTree = "<group>"; };
+		5F2DF1431FB40515008DEC0C /* CYRulerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRulerModel.h; sourceTree = "<group>"; };
+		5F2DF1441FB40515008DEC0C /* CYRulerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRulerModel.m; sourceTree = "<group>"; };
 		5F3065821FA7104A00F6C7B4 /* CYRulerDataSourceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYRulerDataSourceModel.h; sourceTree = "<group>"; };
 		5F3065831FA7104A00F6C7B4 /* CYRulerDataSourceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYRulerDataSourceModel.m; sourceTree = "<group>"; };
 		5FBAB68D1FA42734002D506F /* CYRuler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CYRuler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,8 +138,8 @@
 			children = (
 				5F221AF01FA9AE3E00192C15 /* CYRulerCell.h */,
 				5F221AF11FA9AE3E00192C15 /* CYRulerCell.m */,
-				5F221B241FB3FB6A00192C15 /* CYRulerModel.h */,
-				5F221B231FB3FB6A00192C15 /* CYRulerModel.m */,
+				5F2DF1431FB40515008DEC0C /* CYRulerModel.h */,
+				5F2DF1441FB40515008DEC0C /* CYRulerModel.m */,
 				5F221AF91FAABA4700192C15 /* CYRulerCellModel.h */,
 				5F221AFA1FAABA4700192C15 /* CYRulerCellModel.m */,
 				5F221B0B1FB1647300192C15 /* CYRulerCellParamModel.h */,
@@ -284,7 +284,7 @@
 				5F221B191FB193AB00192C15 /* CYRulerHDHeadCell.m in Sources */,
 				5F221B1C1FB193C000192C15 /* CYRulerHDFootCell.m in Sources */,
 				5FBAB6BA1FA43188002D506F /* CYVerticalRightRuler.m in Sources */,
-				5F221B251FB3FB6A00192C15 /* CYRulerModel.m in Sources */,
+				5F2DF1451FB40515008DEC0C /* CYRulerModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
