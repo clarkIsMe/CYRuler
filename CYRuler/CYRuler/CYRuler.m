@@ -74,7 +74,7 @@ CGFloat rulerWidth;
     rulerWidth = self.frame.size.width;
 }
 - (void)rulerScrollToScale:(NSInteger)scale {
-    NSAssert(scale >= self.rulerModel.startScale && scale <= self.rulerModel.endScale && scale % self.rulerModel.valueOfUnitScale == 0, @"scale（指定值）设置错误");
+    NSAssert(scale >= 0 && scale <= self.rulerModel.endScale && scale % self.rulerModel.valueOfUnitScale == 0, @"scale（指定值）设置错误");
 }
 
 - (void)paramsCheck:(CGFloat)pointerOffset and:(NSInteger)startScale and:(NSInteger)endScale and:(NSInteger)valueOfUnitScale and:(NSInteger)defaultScale {
@@ -83,7 +83,7 @@ CGFloat rulerWidth;
     NSAssert(endScale > startScale, @"endScale（终点刻度）应该大于 startScale（起点刻度）");
     NSAssert(valueOfUnitScale > 0, @"valueOfUnitScale（单位刻度值） 应该大于 0");
     NSAssert(valueOfUnitScale > 0, @"endScale（终点刻度） / valueOfUnitScale（单位刻度值） 应该小于 999,9999");
-    NSAssert(defaultScale >= startScale && defaultScale <= endScale && defaultScale % valueOfUnitScale == 0, @"defaultScale（默认值）设置错误");
+    NSAssert(defaultScale >= 0 && defaultScale <= endScale && defaultScale % valueOfUnitScale == 0, @"defaultScale（默认值）设置错误");
 }
 
 - (void)setPointer:(UIView *)pointer {
@@ -98,8 +98,7 @@ CGFloat rulerWidth;
     if (scaleLable) {
         NSAssert([scaleLable isKindOfClass:[UILabel class]], @"scaleLable 应该是UILable的一种");
     }
-    CYRulerCellModel *model = [self.rulerModel.dataSources firstObject];
-    scaleLable.text = @(model.scaleValue).stringValue;
+    scaleLable.text = @(self.rulerModel.defaultScale).stringValue;
     if (_scaleLable) {
         [_scaleLable removeFromSuperview];
     }

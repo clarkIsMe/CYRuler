@@ -45,12 +45,12 @@ extern BOOL didImplementationEnd;
     
     self.rulerModel = [[CYRulerModel alloc] initWithPointerOffset:pointerOffset startScale:startScale endScale:endScale valueOfUnitScale:valueOfUnitScale defaultScale:(NSInteger)defaultScale according:self.frame];
     
-    [self addPointer];
-    [self addScaleLable];
-    
     [self reloadData];
     
     [self rulerScrollToScale:defaultScale];
+    
+    [self addPointer];
+    [self addScaleLable];
 }
 
 - (void)rulerResetPointerOffset:(double)pointerOffset startScale:(NSInteger)startScale endScale:(NSInteger)endScale valueOfUnitScale:(NSInteger)valueOfUnitScale defaultScale:(NSInteger)defaultScale {
@@ -80,7 +80,7 @@ extern BOOL didImplementationEnd;
 - (void)setPointer:(UIView *)pointer {
     [super setPointer:pointer];
     CGRect orginframe = CGRectMake(pointer.frame.origin.x + (pointer.frame.size.width - pointer.frame.size.height) / 2.0, pointer.frame.origin.y - (pointer.frame.size.width - pointer.frame.size.height) / 2.0, pointer.frame.size.height, pointer.frame.size.width);
-    CGRect frame = [self convertRect:CGRectMake(27-orginframe.size.width, self.rulerModel.pointerOffset-orginframe.size.height/2.0, orginframe.size.width, orginframe.size.height) toView:self.superview];
+    CGRect frame = [self convertRect:CGRectMake(27-orginframe.size.width, self.rulerModel.pointerOffset-orginframe.size.height/2.0 + self.rulerModel.defaultScale / self.rulerModel.valueOfUnitScale * CYRulerUnitPX, orginframe.size.width, orginframe.size.height) toView:self.superview];
     pointer.frame = frame;
     [self.superview addSubview:pointer];
 }
@@ -96,7 +96,7 @@ extern BOOL didImplementationEnd;
 - (void)setScaleLable:(UILabel *)scaleLable {
     [super setScaleLable:scaleLable];
     CGRect orginframe = CGRectMake(scaleLable.frame.origin.x + (scaleLable.frame.size.width - scaleLable.frame.size.height) / 2.0, scaleLable.frame.origin.y - (scaleLable.frame.size.width - scaleLable.frame.size.height) / 2.0, scaleLable.frame.size.height, scaleLable.frame.size.width);
-    CGRect frame = [self convertRect:CGRectMake(40, (self.frame.size.width - orginframe.size.height) / 2.0 , orginframe.size.width, orginframe.size.height) toView:self.superview];
+    CGRect frame = [self convertRect:CGRectMake(40, (self.frame.size.width - orginframe.size.height) / 2.0 + self.rulerModel.defaultScale / self.rulerModel.valueOfUnitScale * CYRulerUnitPX , orginframe.size.width, orginframe.size.height) toView:self.superview];
     scaleLable.frame = frame;
     [self.superview addSubview:scaleLable];
 }

@@ -17,6 +17,7 @@
         _startScale = startScale;
         _endScale = endScale;
         _valueOfUnitScale = valueOfUnitScale;
+        _defaultScale = defaultScale;
         _frame = frame;
         
         [self calculateHorizontalUpScale];
