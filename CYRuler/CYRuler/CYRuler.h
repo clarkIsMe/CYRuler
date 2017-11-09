@@ -10,6 +10,7 @@
 #import "CYRulerCellParamModel.h"
 
 @class CYRuler;
+
 @protocol CYRulerDelegate
 
 @required
